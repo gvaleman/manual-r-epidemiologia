@@ -1,0 +1,9 @@
+_book/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.html
+*.pdf
+
+/.quarto/

@@ -1,0 +1,29 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Manual de Análisis Epidemiológico con R"
+  author: "Tu Nombre"
+  chapters:
+    - index.qmd
+    - chapters/01-intro.qmd
+    - chapters/02-fundamentos.qmd
+    - chapters/03-analisis-descriptivo.qmd
+    - chapters/04-analisis-epidemiologico.qmd
+    - chapters/05-esquisse.qmd
+    - chapters/06-visualizacion.qmd
+    - chapters/07-mapas.qmd
+    - chapters/08-casos-practicos.qmd
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+    toc: true
+    page-layout: custom
+  pdf:
+    documentclass: book
+    papersize: letter
+    toc: true
+    number-sections: true

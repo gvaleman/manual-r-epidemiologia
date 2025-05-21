@@ -1,0 +1,18 @@
+# Análisis Descriptivo para Epidemiología
+
+## Objetivos de Aprendizaje
+
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
+
+## Contenido
+
+Contenido del capítulo...
+
+## Ejercicios Prácticos
+
+1. Primer ejercicio
+2. Segundo ejercicio
+
+## Referencias
