@@ -1,19 +1,9 @@
 # Mis Primeros pasos con R 
 
 ## Introducción
-El análisis de datos en salud pública ha evolucionado significativamente en las últimas décadas. La creciente necesidad de procesar grandes volúmenes de información y realizar análisis cada vez más complejos ha llevado a los profesionales de la salud a buscar herramientas más sofisticadas que las hojas de cálculo tradicionales. En este contexto, R se ha convertido en una herramienta fundamental para el análisis epidemiológico y la investigación en salud pública.
+La programación y el análisis de datos son habilidades fundamentales en la salud pública moderna. R es un lenguaje de programación y un entorno de desarrollo ampliamente utilizado por epidemiólogos, bioestadísticos y profesionales de la salud en todo el mundo, debido a su flexibilidad, potencia y gratuidad. Sin embargo, para quienes no tienen experiencia previa en programación, el primer contacto con R puede parecer desafiante.
 
-Este manual está diseñado específicamente para profesionales de la salud - médicos, enfermeros, personal de laboratorio, epidemiólogos y otros trabajadores del sector - que buscan mejorar sus capacidades analíticas sin necesariamente tener experiencia previa en programación. Nuestro enfoque es práctico y progresivo, comenzando desde los conceptos más básicos hasta aplicaciones de nivel intermedio, siempre manteniendo el contexto de la salud pública y la epidemiología.
-
-R ofrece ventajas significativas para el análisis en salud pública. Como software libre y de código abierto, elimina las barreras económicas y permite el acceso universal a herramientas estadísticas avanzadas. Su naturaleza transparente y reproducible facilita la verificación de resultados y la colaboración entre investigadores, aspectos cruciales en la investigación en salud. Además, R cuenta con una comunidad activa de profesionales de la salud que constantemente desarrollan y mejoran paquetes específicos para análisis epidemiológicos.
-
-La capacidad de R para manejar diferentes tipos de datos, realizar análisis estadísticos complejos y crear visualizaciones profesionales lo convierte en una herramienta invaluable para la práctica moderna en salud pública. Desde el análisis de brotes hasta la vigilancia epidemiológica, desde la creación de gráficos para publicaciones hasta la generación de reportes automatizados, R proporciona las herramientas necesarias para enfrentar los desafíos actuales en el análisis de datos en salud.
-
-Este manual adopta un enfoque gradual, comenzando con los fundamentos básicos de R y progresando hacia aplicaciones más avanzadas. Cubriremos desde la instalación y configuración inicial hasta la creación de visualizaciones complejas y análisis epidemiológicos específicos. Cada capítulo incluye ejemplos prácticos basados en situaciones reales en salud pública, con un énfasis particular en el análisis de enfermedades transmitidas por arbovirus, permitiendo una aplicación inmediata de los conocimientos adquiridos.
-
-Reconocemos que aprender un nuevo lenguaje de programación puede parecer desafiante al principio. Sin embargo, la inversión inicial en tiempo y esfuerzo se ve ampliamente compensada por la capacidad de realizar análisis más sofisticados, automatizar tareas repetitivas y producir resultados más confiables y reproducibles. Este manual busca hacer este proceso de aprendizaje lo más accesible posible, proporcionando una base sólida para el análisis de datos en salud pública.
-
-La era actual de la salud pública basada en evidencia requiere profesionales capaces de analizar datos de manera efectiva y presentar resultados de forma clara y convincente. Este manual es tu punto de partida para desarrollar estas habilidades esenciales, permitiéndote contribuir más efectivamente a la toma de decisiones en salud pública y a la investigación epidemiológica.
+En este capítulo, te guiaremos en tus primeros pasos con R, desde la instalación de las herramientas necesarias hasta la comprensión básica de la interfaz y el uso de comandos simples. El objetivo es que pierdas el miedo inicial y te familiarices con el entorno de trabajo, sentando una base sólida para los análisis más avanzados que desarrollarás en los siguientes capítulos. Aprenderás qué es R, cómo funciona RStudio (el entorno gráfico más popular para trabajar con R), y cómo ejecutar tus primeros comandos. Además, se incluyen ejercicios prácticos para que refuerces lo aprendido y consolides tu confianza en el uso de R.
 
 ## Objetivos de Aprendizaje
 
@@ -21,8 +11,6 @@ La era actual de la salud pública basada en evidencia requiere profesionales ca
 - Instalar correctamente R y RStudio en su computadora
 - Familiarizarse con la interfaz de RStudio y sus componentes principales
 - Ejecutar comandos básicos en la consola de R
-
----
 
 ## ¿Qué es R?
 
@@ -35,8 +23,6 @@ La era actual de la salud pública basada en evidencia requiere profesionales ca
 - Dispone de una gran cantidad de **paquetes desarrollados por la comunidad** que amplían sus capacidades.
 - Es muy reconocido por su **potencia en la visualización de datos**.
 
----
-
 ## ¿Qué es RStudio?
 
 **RStudio** es un **entorno de desarrollo integrado (IDE)** para R, que facilita el trabajo de programación, análisis y generación de informes en R.
@@ -48,13 +34,10 @@ La era actual de la salud pública basada en evidencia requiere profesionales ca
 - Facilita la **administración de proyectos** y la instalación de paquetes.
 - Permite **crear informes reproducibles** y exportar resultados en varios formatos.
 
----
-
 > **Entonces, si alguien te pregunta las diferencias entre R y RStudio, ahora ya sabes:**  
 > - **R** es el lenguaje y el motor de análisis.  
 > - **RStudio** es la herramienta que hace más fácil y eficiente trabajar con R.
 
----
 ## Partes de la interfaz de RStudio
 
 A continuación se enumeran las principales áreas o paneles que conforman la interfaz de RStudio:
@@ -79,13 +62,286 @@ A continuación se enumeran las principales áreas o paneles que conforman la in
 
 ![Partes de la interfaz de RStudio](../images/rstudio-editor.png)
 
-
 ## Instalando R y RStudio
 
+Para comenzar a trabajar con R, necesitarás instalar dos componentes principales: el lenguaje R en sí mismo y RStudio, que es el entorno de desarrollo integrado (IDE) que facilita enormemente el trabajo con R. A continuacion se detalla un procedimiento paso a paso para realizar la instalación de R y RStudio, además, te recomendamos visitar un video paso a paso en youtube sobre la instalación de manera guiada: https://www.youtube.com/watch?v=gdh6afTOA7s.
+
+### Instalación de R
+
+#### Para Windows
+
+1. **Visita el sitio web oficial de R**: [https://cran.r-project.org/](https://cran.r-project.org/)
+
+2. **Haz clic en "Download R for Windows"**
+
+3. **Selecciona "base"** (para la instalación básica de R)
+
+4. **Haz clic en "Download R x.x.x for Windows"** (donde x.x.x es la versión más reciente)
+
+5. **Ejecuta el archivo descargado** y sigue las instrucciones del instalador:
+   - Acepta el acuerdo de licencia
+   - Selecciona la carpeta de destino (puedes dejar la predeterminada)
+   - Selecciona los componentes (puedes dejar las opciones predeterminadas)
+   - Configura las opciones de inicio (puedes dejar las opciones predeterminadas)
+   - Selecciona la carpeta del menú de inicio (puedes dejar la predeterminada)
+   - Selecciona las tareas adicionales (puedes dejar las opciones predeterminadas)
+   - Haz clic en "Instalar"
+
+#### Para macOS
+
+1. **Visita el sitio web oficial de R**: [https://cran.r-project.org/](https://cran.r-project.org/)
+
+2. **Haz clic en "Download R for macOS"**
+
+3. **Selecciona el instalador adecuado para tu versión de macOS**:
+   - Para macOS con chip Apple Silicon (M1/M2): R-x.x.x-arm64.pkg
+   - Para macOS con chip Intel: R-x.x.x-x86_64.pkg
+   - Si no estás seguro, puedes descargar la versión universal que funciona en ambos tipos de procesadores
+
+4. **Ejecuta el archivo .pkg descargado** y sigue las instrucciones del instalador:
+   - Haz clic en "Continuar" varias veces
+   - Acepta el acuerdo de licencia
+   - Selecciona la ubicación de instalación (puedes dejar la predeterminada)
+   - Haz clic en "Instalar"
+   - Es posible que necesites ingresar tu contraseña de administrador
+
+### Instalación de RStudio
+
+Una vez que hayas instalado R, puedes proceder a instalar RStudio:
+
+#### Para Windows y macOS
+
+1. **Visita el sitio web oficial de RStudio**: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+
+2. **Desplázate hacia abajo hasta la sección "Installers for Supported Platforms"**
+
+3. **Descarga el instalador adecuado para tu sistema operativo**:
+   - Para Windows: RStudio-x.x.x.exe
+   - Para macOS: RStudio-x.x.x.dmg
+
+4. **Ejecuta el archivo descargado** y sigue las instrucciones del instalador:
+
+   **Para Windows**:
+   - Haz clic en "Siguiente" varias veces
+   - Acepta la ubicación de instalación (puedes dejar la predeterminada)
+   - Selecciona la carpeta del menú de inicio (puedes dejar la predeterminada)
+   - Haz clic en "Instalar"
+
+   **Para macOS**:
+   - Arrastra el icono de RStudio a la carpeta de Aplicaciones
+   - Es posible que necesites ingresar tu contraseña de administrador
+
+### Verificación de la instalación
+
+Para verificar que tanto R como RStudio se han instalado correctamente:
+
+1. **Abre RStudio** desde el menú de inicio (Windows) o desde la carpeta de Aplicaciones (macOS)
+
+2. **Verifica que RStudio muestre la versión de R** en el panel de la consola (abajo a la izquierda)
+
+3. **Ejecuta un comando simple** para asegurarte de que R funciona correctamente:
+   ```r
+   print("¡Hola, mundo!")
+   ```
+
+4. **Deberías ver el texto "¡Hola, mundo!"** como resultado en la consola
+
+¡Felicidades! Ahora tienes R y RStudio instalados en tu computadora y estás listo para comenzar a explorar el mundo del análisis de datos con R.
+
+### Consejos adicionales
+
+- **Actualiza R y RStudio regularmente** para beneficiarte de las últimas mejoras y correcciones de errores.
+- **Si encuentras problemas durante la instalación**, consulta la documentación oficial o busca ayuda en los foros de la comunidad.
+- **En entornos corporativos o institucionales**, es posible que necesites permisos de administrador para instalar software. Consulta con tu departamento de TI si encuentras problemas de permisos.
+
+## Buenas prácticas al comenzar con R
+
+Trabajar con R puede ser mucho más eficiente, seguro y agradable si adoptas desde el principio una serie de buenas prácticas que te ayudarán a evitar errores, perder información o sentirte desorganizado. Aquí te presentamos algunas recomendaciones esenciales para comenzar con el pie derecho.
+
+### 1. Organiza tus proyectos en carpetas separadas
+
+Evita guardar tus scripts y datos en carpetas como "Escritorio" o "Descargas". Lo ideal es que cada proyecto tenga su propia carpeta dedicada, donde almacenes todos los archivos relacionados (scripts, bases de datos, resultados, gráficos, etc.).  
+Esto facilita la organización, la colaboración y la reproducción de tu trabajo en el futuro.
+
+> **Ejemplo:**  
+> Crea una carpeta llamada `proyecto_brote_dengue` y guarda ahí todos los archivos relacionados con ese análisis.
+
+### 2. Utiliza nombres descriptivos para tus archivos
+
+Nombra tus scripts y datos de manera clara y específica. Evita nombres genéricos como `script1.R` o `datos.csv`.  
+Prefiere nombres como `limpieza_datos_dengue.R` o `casos_dengue_2023.csv`.  
+Esto te permitirá identificar rápidamente el contenido de cada archivo, incluso después de mucho tiempo.
+
+### 3. Guarda frecuentemente tu trabajo
+
+Haz el hábito de guardar tus scripts cada vez que realices cambios importantes.  
+RStudio permite guardar fácilmente con `Ctrl + S` o desde el menú Archivo > Guardar.  
+Si trabajas con datos grandes o procesos largos, guarda también tus resultados intermedios.
+
+### 4. Comenta tu código
+
+Usa el símbolo `#` para agregar comentarios que expliquen qué hace cada parte de tu código.  
+Esto es útil para ti y para cualquier otra persona que trabaje con tus scripts en el futuro.
+
+```r
+# Este bloque de código limpia los datos de fechas erróneas
+datos <- datos[!is.na(datos$fecha), ]
+```
+
+### 5. Explora el uso de la Inteligencia Artificial como complemento
+
+La inteligencia artificial (IA) está transformando muchas áreas, y el análisis de datos no es una excepción. Si bien R sigue siendo una herramienta fundamental para la manipulación y el análisis estadístico, la IA puede complementar tu flujo de trabajo en varias formas:
+
+-   **Generación de código:** Herramientas de IA como Copilot o ChatGPT pueden ayudarte a escribir código R más rápido, especialmente si estás aprendiendo o necesitas generar código repetitivo. Puedes describir lo que quieres hacer en lenguaje natural y la IA te proporcionará el código correspondiente.
+
+    *Ejemplo:* "Genera un gráfico de dispersión en R que muestre la relación entre la edad y la presión arterial, con una línea de regresión lineal."
+
+-   **Documentación y aprendizaje:** La IA puede explicarte conceptos complejos de R, ayudarte a entender la documentación de funciones o sugerirte paquetes relevantes para tu análisis.
+
+    *Ejemplo:* "Explica cómo funciona la función `glm()` en R y cómo interpretar los resultados."
+
+-   **Detección de errores:** La IA puede ayudarte a identificar errores en tu código o sugerirte mejoras en tu estilo de programación.
+
+    *Ejemplo:* "Revisa este código R y dime si hay algún error o alguna forma de hacerlo más eficiente."
+
+-   **Análisis exploratorio de datos (EDA):** Algunas herramientas de IA pueden realizar un análisis exploratorio de datos automatizado, identificando patrones, valores atípicos o relaciones interesantes en tus datos. Esto puede ser un buen punto de partida para tu análisis en R.
+
+    *Ejemplo:* "Realiza un EDA de este conjunto de datos y dime cuáles son las variables más importantes y si hay algún valor atípico."
+
+**Recomendaciones al usar IA:**
+
+-   **Valida siempre el código generado por la IA:** No confíes ciegamente en el código generado por la IA. Revísalo cuidadosamente y asegúrate de que hace lo que esperas.
+-   **Entiende el código:** No te limites a copiar y pegar el código generado por la IA. Intenta entender cómo funciona y por qué.
+-   **Usa la IA como una herramienta, no como un sustituto:** La IA puede ayudarte a ser más eficiente, pero no puede reemplazar tu conocimiento y experiencia en análisis de datos.
+-   **Sé consciente de las limitaciones de la IA:** La IA no es perfecta y puede cometer errores. No la uses para tomar decisiones importantes sin una revisión humana.
+
+Al integrar la IA en tu flujo de trabajo en R, puedes acelerar tu aprendizaje, mejorar tu productividad y descubrir nuevas perspectivas en tus datos.
+
+### 6. Escribe Prompts Efectivos para Inteligencia Artificial
+
+Para obtener los mejores resultados al usar IA para complementar tu trabajo en R, es crucial escribir prompts claros, específicos y bien estructurados. Un buen prompt puede marcar la diferencia entre una respuesta útil y una respuesta confusa o irrelevante.
+
+**Principios clave para escribir prompts efectivos:**
+
+1.  **Sé específico:** Define claramente lo que quieres que la IA haga. Evita preguntas vagas o ambiguas.
+
+    *   **Malo:** "Ayúdame con R."
+    *   **Bueno:** "Escribe un script en R que calcule el promedio de una columna llamada 'edad' en un data frame llamado 'datos'."
+
+2.  **Contextualiza:** Proporciona suficiente información para que la IA entienda el contexto de tu pregunta. Incluye detalles sobre tus datos, tus objetivos y cualquier restricción relevante.
+
+    *   **Malo:** "Cómo hago un gráfico de dispersión?"
+    *   **Bueno:** "Tengo un data frame en R llamado 'ventas' con columnas 'mes' y 'ingresos'. Crea un gráfico de dispersión que muestre los ingresos en función del mes."
+
+3.  **Define el formato de salida:** Indica claramente el formato en el que quieres que la IA te proporcione la respuesta. ¿Quieres un script completo, un fragmento de código, una explicación paso a paso o una lista de recomendaciones?
+
+    *   **Malo:** "Explica cómo funciona la regresión lineal."
+    *   **Bueno:** "Explica cómo funciona la regresión lineal en R y proporciona un ejemplo de código que muestre cómo realizar una regresión lineal con la función `lm()`."
+
+4.  **Usa ejemplos:** Si es posible, proporciona ejemplos de lo que quieres que la IA haga. Esto puede ayudar a la IA a entender mejor tus expectativas y a generar respuestas más precisas.
+
+    *   **Malo:** "Escribe un código para limpiar datos."
+    *   **Bueno:** "Escribe un código en R para reemplazar los valores faltantes en una columna llamada 'temperatura' con la media de la columna. Por ejemplo, si 'temperatura' tiene los valores `[20, 22, NA, 25]`, el código debería reemplazar el `NA` con `22.33`."
+
+5.  **Sé iterativo:** Si la primera respuesta de la IA no es satisfactoria, no te rindas. Refina tu prompt, proporciona más detalles o prueba con diferentes enfoques. La clave es experimentar y aprender de cada interacción.
+
+**Ejemplos de prompts efectivos para diferentes tareas:**
+
+*   **Generación de código:**
+
+    *   "Escribe una función en R que tome un data frame como entrada y devuelva un nuevo data frame con las columnas numéricas normalizadas entre 0 y 1."
+*   **Documentación y aprendizaje:**
+
+    *   "Explica la diferencia entre `apply()`, `lapply()` y `sapply()` en R y proporciona ejemplos de cuándo usar cada uno."
+*   **Detección de errores:**
+
+    *   "Revisa este código R e identifica posibles errores o ineficiencias: `for (i in 1:10) { print(i) }`."
+*   **Análisis exploratorio de datos (EDA):**
+
+    *   "Realiza un análisis exploratorio de datos del conjunto de datos 'iris' en R y genera un informe que incluya estadísticas descriptivas, gráficos de distribución y una matriz de correlación."
+
+Al seguir estos principios, podrás comunicarte de manera más efectiva con las herramientas de IA y aprovechar al máximo su potencial para complementar tu trabajo en R.
+
+## Recursos y comunidades
+
+- **[Sitio oficial de R](https://www.r-project.org/):**  
+  Portal principal del lenguaje R. Permite descargar R, acceder a documentación oficial y mantenerse al día con noticias y actualizaciones.
+
+- **[RStudio Community (en inglés)](https://community.rstudio.com/):**  
+  Foro donde usuarios y desarrolladores de RStudio resuelven dudas, comparten buenas prácticas y discuten temas del ecosistema R.
+
+- **[Stack Overflow (etiqueta R)](https://stackoverflow.com/questions/tagged/r):**  
+  Plataforma de preguntas y respuestas para programadores. La etiqueta R reúne soluciones a errores comunes, ejemplos y consejos prácticos.
+
+- **[R para Ciencia de Datos (en español)](https://es.r4ds.hadley.nz/):**  
+  Libro gratuito y en español que enseña R desde cero, orientado al análisis y visualización de datos con tidyverse.
+
+- **[CRAN - Contributed Documentation](https://cran.r-project.org/other-docs.html):**  
+  Colección de manuales y tutoriales aportados por la comunidad, que cubren temas introductorios y avanzados de R.
+
+- **Comunidades y grupos de R en Facebook, Telegram y YouTube:**  
+  Espacios donde usuarios de R comparten recursos, resuelven dudas y publican tutoriales en video o eventos en vivo.
+
+## Solución de problemas comunes
+
+- **No puedo instalar un paquete:**  
+  - Verifica tu conexión a internet.
+  - Usa el comando: `install.packages("nombre_del_paquete")`.
+  - Si aparece un error de permisos, intenta ejecutar R o RStudio como administrador.
+- **Error de sintaxis:**  
+  - Revisa cuidadosamente los paréntesis `()`, corchetes `[]`, llaves `{}` y comillas `" "`.
+  - Asegúrate de no dejar líneas incompletas.
+- **El código no se ejecuta:**  
+  - Selecciona la línea y presiona `Ctrl + Enter` en RStudio.
+  - Verifica en qué panel estás escribiendo.
+- **RStudio no reconoce un paquete:**  
+  - Asegúrate de haberlo instalado y de haber usado `library(nombre_del_paquete)` antes de usarlo.
+
+> **Tip:** Si tienes un error, copia el mensaje y búscalo en Google o en Stack Overflow. ¡La mayoría de los problemas ya han sido resueltos por otros usuarios!
+
+## Glosario básico
+
+| Término    | Definición breve                                                             |
+|------------|------------------------------------------------------------------------------|
+| Script     | Archivo de texto donde escribes código que puede ejecutarse línea por línea.  |
+| Consola    | Ventana donde R ejecuta comandos y muestra los resultados.                   |
+| Paquete    | Colección de funciones y datos adicionales que amplían las capacidades de R.  |
+| Objeto     | Resultado de una operación en R, como un número, vector, tabla, función, etc. |
+| Función    | Comando que realiza una acción específica, como `mean()` para calcular medias.|
+| Proyecto   | Carpeta organizada en RStudio para trabajar con archivos relacionados.        |
 
 ## Ejercicios Prácticos
 
-1. Primer ejercicio
-2. Segundo ejercicio
+1. **Reflexiona:**  
+   ¿Por qué crees que R es especialmente útil para el análisis de datos en epidemiología? Menciona al menos dos ventajas sobre otros programas estadísticos.
+
+2. **Reconoce la interfaz:**  
+   Describe brevemente la función de cada uno de los siguientes paneles en RStudio:  
+   - Editor de Scripts  
+   - Consola  
+   - Entorno/Historial  
+   - Archivos/Plots/Paquetes/Ayuda/Visor
+
+3. **Buenas prácticas:**  
+   Imagina que inicias un nuevo proyecto sobre un brote epidemiológico. ¿Cómo organizarías tus carpetas y archivos para ese proyecto?
+
+4. **Prompts para IA:**  
+   Escribe dos ejemplos de prompts efectivos que podrías usar con una herramienta de inteligencia artificial para aprender o resolver problemas en R.
+
+5. **Solución de errores:**  
+   Si R te muestra este mensaje:  
+   `Error in library(ggplot2) : there is no package called 'ggplot2'`  
+   ¿Qué pasos seguirías para solucionarlo?
+
+6. **Glosario en contexto:**  
+   Elige tres términos del glosario y escribe una frase que demuestre que entiendes su significado dentro del uso de R.
 
 ## Referencias
+
+- R Core Team. (2024). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing. [https://www.r-project.org/](https://www.r-project.org/)
+- Posit Software, PBC. (2024). *RStudio: IDE for R*. [https://posit.co/](https://posit.co/)
+- Wickham, H. & Grolemund, G. (2017). *R para Ciencia de Datos*. [https://es.r4ds.hadley.nz/](https://es.r4ds.hadley.nz/)
+- CRAN - Contributed Documentation. [https://cran.r-project.org/other-docs.html](https://cran.r-project.org/other-docs.html)
+- Stack Overflow, etiqueta R. [https://stackoverflow.com/questions/tagged/r](https://stackoverflow.com/questions/tagged/r)
+- RStudio Community. [https://community.rstudio.com/](https://community.rstudio.com/)
+- Comunidades y grupos de R en Facebook, Telegram y YouTube.

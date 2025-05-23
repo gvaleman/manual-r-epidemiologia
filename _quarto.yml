@@ -4,7 +4,10 @@ project:
 
 book:
   title: "Manual de Análisis Epidemiológico con R"
-  author: "Tu Nombre"
+  author:
+    - "Desarrollado por el equipo de Informática y Análisis de datos"
+    - "del Instituto de Ciencias Sostenibles"
+  cover-image: images/logo.png   # Si tienes un logo, si no, comenta esta línea
   chapters:
     - index.qmd
     - chapters/01-intro.qmd
@@ -21,9 +24,11 @@ format:
     theme: cosmo
     code-fold: true
     toc: true
-    page-layout: custom
+    lang: es
   pdf:
     documentclass: book
     papersize: letter
     toc: true
     number-sections: true
+    lang: es
+
